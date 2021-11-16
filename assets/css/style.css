@@ -19,3 +19,8 @@ body{
 #submit:hover{
 	background-color:tomato;
 } 
+
+p{
+    font-style: italic;
+    font-weight: bold;
+} 

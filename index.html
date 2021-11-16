@@ -13,24 +13,31 @@
 
     <h1>KG's Coding Quiz</h1>
 
-  <div id="score"></div>
+    <div class="stop-watch">You have <span id="timer">02:00</span> minutes left!</div>
 
-  <div id="timer">Only begin when you feel confident and ready. You will be timed on this. You have <span id="timer">05:00</span> minutes left</div>
+    <div class="lf-quiz">
 
-    <p>Question1</p>
-      <button id="submit">Option1</button>
-      <button id="submit">Option2</button>
-    <p>Question2</p>
-      <button id="submit">Option1</button>
-      <button id="submit">Option2</button>
-    <p>Question3</p>
-      <button id="submit">Option1</button>
-      <button id="submit">Option2</button>
-    <p>Question4</p>
-      <button id="submit">Option1</button>
-      <button id="submit">Option2</button>
+        <div class="score">
+            <div class="score-card">
+                High Score: <span id="scoreCard">0</span>
+            </div>
+        </div>
 
-  <div id="results">Correct!</div>
+        <div id="questionBox" class="question"></div>
+        <div class="options">
+            <ul id="ul">
+                <li id="option1" onclick="button(this)"></li>
+                <li id="option2" onclick="button(this)"></li>
+            </ul>
+        </div>
+
+        <div class="next">
+            <button id="btnNext" type="button" onclick="next()">
+            Continue
+            </button>
+        </div>
+
+    </div>
 
   <script src="./assets/js/script.js"></script>
 
